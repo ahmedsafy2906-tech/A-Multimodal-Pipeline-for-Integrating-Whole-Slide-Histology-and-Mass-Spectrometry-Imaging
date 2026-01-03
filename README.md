@@ -1,0 +1,2 @@
+# A-Multimodal-Pipeline-for-Integrating-Whole-Slide-Histology-and-Mass-Spectrometry-Imaging
+This project introduces a multimodal deep learning pipeline that links whole-slide histology images with mass spectrometry imaging data. By learning shared representations between tissue morphology and molecular profiles, the model predicts spatial molecular patterns directly from routine histology images without requiring molecular imaging.
