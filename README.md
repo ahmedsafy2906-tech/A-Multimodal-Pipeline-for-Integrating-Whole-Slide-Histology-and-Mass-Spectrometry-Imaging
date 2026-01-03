@@ -1,2 +1,17 @@
-# A-Multimodal-Pipeline-for-Integrating-Whole-Slide-Histology-and-Mass-Spectrometry-Imaging
-This project introduces a multimodal deep learning pipeline that links whole-slide histology images with mass spectrometry imaging data. By learning shared representations between tissue morphology and molecular profiles, the model predicts spatial molecular patterns directly from routine histology images without requiring molecular imaging.
+# WSI to MSI Prediction Pipeline
+
+## Overview
+This project predicts molecular profiles from whole-slide histology images
+using deep learning and spatial alignment with mass spectrometry imaging (MSI).
+
+## Main Idea
+- Extract patches from WSI
+- Align them with MSI spots
+- Use pretrained models (ResNet50, UNI)
+- Predict MSI signals using regression models
+
+## Project Status
+Course project / research prototype.
+
+## Author
+Ahmed Safy
