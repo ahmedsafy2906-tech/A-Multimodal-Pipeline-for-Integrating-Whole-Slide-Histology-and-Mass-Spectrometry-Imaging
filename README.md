@@ -1,17 +1,17 @@
-# WSI to MSI Prediction Pipeline
+# A Multimodal Pipeline for Integrating Whole-Slide Histology and Mass Spectrometry Imaging
 
 ## Overview
-This project predicts molecular profiles from whole-slide histology images
-using deep learning and spatial alignment with mass spectrometry imaging (MSI).
+This project explores multiple deep learning pipelines for predicting spatial molecular profiles from whole-slide histopathology images (WSI).  
+Mass Spectrometry Imaging (MSI) data is used only during training as supervision, while inference relies solely on histology images.
 
-## Main Idea
-- Extract patches from WSI
-- Align them with MSI spots
-- Use pretrained models (ResNet50, UNI)
-- Predict MSI signals using regression models
+The project compares different modeling strategies, including CNN-based feature extraction, MLP regression, and graph neural networks for spatial modeling.
 
-## Project Status
-Course project / research prototype.
+## Project Structure
+- `src/`: Source code for all pipelines
+- `docs/`: Project documentation and design details
+- `data/`: Instructions for obtaining datasets
+- `requirements.txt`: Python dependencies
 
-## Author
-Ahmed Safy
+## Installation
+```bash
+pip install -r requirements.txt
