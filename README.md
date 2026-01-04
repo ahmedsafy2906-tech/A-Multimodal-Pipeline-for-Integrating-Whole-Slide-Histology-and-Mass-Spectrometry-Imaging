@@ -41,6 +41,31 @@ In this pipeline, a pretrained histopathology foundation model (such as UNI) is 
 This pipeline explicitly models tissue structure as a spatial graph. Each node represents a spatial spot or patch aligned between WSI and MSI, while edges encode spatial neighborhood relationships. A Graph Attention Network (GATv2) propagates information between neighboring tissue regions, enabling the model to capture local tissue architecture and spatial dependencies that are not accessible to independent patch-based models.
 
 ---
+# Data
+
+This project uses the **Spatial Multimodal Analysis of Transcriptomes and Metabolomes in Tissues** dataset.
+
+## Dataset Source
+- Platform: Mendeley Data
+- Title: Spatial Multimodal Analysis of Transcriptomes and Metabolomes in Tissues
+- DOI: 10.17632/w7nw4km7xd.1
+- Link: https://data.mendeley.com/datasets/w7nw4km7xd/1
+
+## Modalities
+- H&E whole-slide histology images (WSI)
+- Mass Spectrometry Imaging (MSI)
+- Spatial transcriptomics (Visium)
+
+## Dataset Used in This Project
+Only the **`sma/`** folder is used, as it provides:
+- Pre-aligned WSI–MSI spatial coordinates
+- Spot-level correspondence between histology and molecular data
+- Consistent spatial registration across modalities
+
+## Notes
+Due to the large size of the dataset, data files are **not included** in this repository.
+Users must download the dataset manually from the official source and place it inside the `data/` directory following the original folder structure.
+
 
 ## Data Representation
 
@@ -118,6 +143,14 @@ Overall predictive performance is modest, which is expected given the intrinsic 
 This project demonstrates a structured exploration of multimodal learning for linking tissue morphology to molecular information. While quantitative performance is limited, the pipelines establish a strong experimental framework and emphasize the critical role of spatial modeling when learning cross-modal relationships.
 
 ---
+## Usage
+
+Each pipeline can be executed independently:
+
+```bash
+python src/pipelines/pipeline_1_resnet_vs_uni/main.py
+python src/pipelines/pipeline_2_uni_mlp_msi_prediction/main.py
+python src/pipelines/pipeline_3_wsi_to_msi_gnn/main.py
 
 ## Disclaimer
 This project is intended for research and educational purposes only and is not suitable for clinical use.
