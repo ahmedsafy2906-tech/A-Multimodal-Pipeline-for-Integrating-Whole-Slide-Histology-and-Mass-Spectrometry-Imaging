@@ -1,4 +1,3 @@
-<img width="1195" height="225" alt="image" src="https://github.com/user-attachments/assets/c75bbac1-1aab-4dba-9235-ceb13ae09641" /># A Multimodal Pipeline for Integrating Whole-Slide Histology and Mass Spectrometry Imaging
 
 ## Overview
 This project investigates whether spatial molecular information obtained from Mass Spectrometry Imaging (MSI) can be inferred directly from routine whole-slide histopathology images (WSI). While MSI provides rich molecular insight, it is costly and rarely available in clinical settings. In this work, MSI is used only during training as supervision, while inference relies solely on histology images.
@@ -13,7 +12,7 @@ The project explores multiple deep learning pipelines with increasing levels of 
 - Predict spatial molecular patterns from histology alone at inference time.
 - Evaluate the effect of spatial modeling on prediction quality.
 <p align="center">
-  <strong>Figure X. Core idea of learning a unified mapping from histological morphology (WSI) to spatial molecular patterns (MSI).  
+  <strong>Figure. Core idea of learning a unified mapping from histological morphology (WSI) to spatial molecular patterns (MSI).  
   MSI data is used only during training, while inference relies solely on histology images.</strong>
 </p>
 
