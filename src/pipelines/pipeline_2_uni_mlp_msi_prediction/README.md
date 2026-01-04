@@ -1,4 +1,4 @@
-<img width="1088" height="640" alt="image" src="https://github.com/user-attachments/assets/c55bde6e-99a8-4f72-bcf8-b492afe93ca0" />## Pipeline 2 — UNI + Context-Aware MLP for MSI Prediction
+
 
 This pipeline implements an end-to-end **multimodal computational pathology framework** for predicting **Mass Spectrometry Imaging (MSI) molecular profiles** directly from **whole-slide histopathology images (WSI)**. The model leverages a frozen **UNI histopathology foundation model** for feature extraction and a **non-linear, context-aware MLP regression head** for molecular prediction.
 
