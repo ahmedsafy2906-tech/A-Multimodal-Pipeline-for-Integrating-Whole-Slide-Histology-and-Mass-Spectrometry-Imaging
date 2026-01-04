@@ -261,7 +261,7 @@ def apply_pca_to_data(train_data, test_data, n_components=200):
 
 
 ################################################################################
-# SPATIAL GRAPH & GNN MODEL
+# SPATIAL GRAPH & GNN MODEl
 ################################################################################
 
 class SpatialGraphBuilder:
