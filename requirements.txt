@@ -1,0 +1,90 @@
+## Requirements
+
+### System Requirements
+- Python ≥ 3.9
+- CUDA-compatible GPU (recommended for training and feature extraction)
+- Linux or macOS (tested), Windows supported with minor adjustments
+
+---
+
+### Python Dependencies
+
+The project depends on the following Python libraries:
+
+- numpy
+- pandas
+- scipy
+- scikit-learn
+- matplotlib
+- seaborn
+- tqdm
+- pillow
+- opencv-python
+
+Deep Learning:
+- torch ≥ 2.0
+- torchvision
+- torchaudio
+- torch-geometric
+- torch-scatter
+- torch-sparse
+- torch-cluster
+- torch-spline-conv
+
+Computer Vision & Image Processing:
+- albumentations
+- timm
+
+Graph Neural Networks:
+- pyg-lib
+- torch-geometric
+
+Utilities:
+- pyyaml
+- argparse
+
+All dependencies can be installed using:
+
+### UNI – Universal Histopathology Foundation Model (Mahmood Lab)
+
+Several pipelines in this project rely on **UNI (Universal Histopathology Image Encoder)**, a large-scale foundation model for histopathology developed by the **Mahmood Lab (Harvard Medical School)**.
+
+#### Model Description
+- Name: UNI (Universal Histopathology Image Encoder)
+- Architecture: Vision Transformer–based foundation model
+- Training data: Millions of histopathology image patches from diverse tissue types
+- Purpose: Learn generalizable morphological representations from H&E whole-slide images
+- Usage in this project:
+  - Feature extraction only
+  - The model is used as a **frozen backbone**
+  - No fine-tuning is performed
+
+UNI serves as a strong visual encoder that captures tissue architecture, cellular morphology, and microenvironmental patterns, which are then used as input features for downstream regression and graph neural network models.
+
+---
+
+#### Model Source and Access
+UNI is **not included** in this repository.
+
+The model must be obtained directly from the official Mahmood Lab release via **Hugging Face**.
+
+- Official source: Mahmood Lab (Harvard Medical School)
+- Distribution platform: Hugging Face Model Hub
+- Access restrictions: Requires authentication and acceptance of model terms
+
+---
+
+#### Hugging Face Token Requirement
+
+To download UNI model weights, users must authenticate with Hugging Face.
+
+Steps:
+1. Create a Hugging Face account  
+2. Generate an access token  
+3. Authenticate locally using one of the following methods:
+
+```bash
+huggingface-cli login
+
+```bash
+pip install -r requirements.txt
